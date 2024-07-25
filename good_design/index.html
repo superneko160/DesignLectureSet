@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>稟議書管理アプリ(Good UI)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-gray-800 text-xl font-semibold">稟議書管理アプリ</h1>
+            <div class="flex items-center space-x-2">
+                <span class="text-sm text-gray-600">テスト太郎</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="ユーザーアイコン" class="w-8 h-8 rounded-full bg-blue-100">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-8">
+        <div class="bg-white rounded-lg shadow p-4 mb-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">稟議書一覧</h2>
+                <div class="flex space-x-2">
+                    <div class="relative">
+                        <input type="text" placeholder="検索..." class="border rounded-md py-1 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <select class="border rounded-md py-1 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option>並び替え: 申請日</option>
+                        <option>並び替え: 状態</option>
+                        <option>並び替え: 申請者</option>
+                    </select>
+                    <button class="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-md px-4 py-1">ダウンロード</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-1">新規作成</button>
+                </div>
+            </div>
+            <ul>
+                <li class="border-b py-4 cursor-pointer hover:bg-gray-50">
+                    <h3 class="font-semibold">テスト社部長との会食の件</h3>
+                    <div class="text-sm text-gray-600 mt-1">
+                        <span class="inline-block bg-green-100 text-green-800 rounded-full px-2 py-1 text-xs font-semibold mr-2">承認済み</span>
+                        <span>申請者: テスト太朗</span> |
+                        <span>申請日: 2024-07-11</span> |
+                        <span>承認日: 2024-07-13</span>
+                    </div>
+                </li>
+                <li class="border-b py-4 cursor-pointer hover:bg-gray-50">
+                    <h3 class="font-semibold">テスト株式会社との新規取引開始について</h3>
+                    <div class="text-sm text-gray-600 mt-1">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2">申請中</span>
+                        <span>申請者: テスト花子</span> |
+                        <span>申請日: 2024-07-15</span>
+                    </div>
+                </li>
+                <li class="py-4 cursor-pointer hover:bg-gray-50">
+                    <h3 class="font-semibold">新入社員用ノートPC購入</h3>
+                    <div class="text-sm text-gray-600 mt-1">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2">申請中</span>
+                        <span>申請者: テスト太郎</span> |
+                        <span>申請日: 2024-07-26</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

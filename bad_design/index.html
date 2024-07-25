@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>稟議書管理アプリ(Bad UI)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md p-4">
+        <ul class="flex space-x-2 text-white justify-end">
+            <h1 class="text-gray-800 text-lg font-semibold mr-auto">稟議書管理アプリ</h1>
+            <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">並び替え</a></li>
+            <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">ダウンロード</a></li>
+            <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">検索</a></li>
+            <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">新規作成</a></li>
+        </ul>
+        <div class="flex items-center space-x-2 mt-0.5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="ユーザーアイコン" class="w-6 h-6 rounded-full bg-blue-100">
+            <span class="text-sm text-gray-600">テスト太郎</span>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-8">
+        <div>
+
+            <div class="bg-white rounded-lg shadow p-4 flex items-center space-x-4 mb-4">
+                <div>
+                    <h3 class="font-semibold">テスト社部長との会食の件</h3>
+                    <p class="text-gray-600">状態：<span class="text-green-500">✓</span>承認</p>
+                    <p class="text-gray-600">申請者: テスト太朗</p>
+                    <p class="text-gray-600">申請日: 2024-07-11</p>
+                    <div class="my-1.5 text-sm">
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">開く</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">修正</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">削除</button>
+                    </div>
+                </div>
+            </div><!-- 1 -->
+
+            <div class="bg-white rounded-lg shadow p-4 flex items-center space-x-4 mb-4">
+                <div>
+                    <h3 class="font-semibold">テスト株式会社との新規取引開始について</h3>
+                    <p class="text-gray-600">状態: <span class="text-yellow-500">●</span>申請中</p>
+                    <p class="text-gray-600">申請者: テスト花子</p>
+                    <p class="text-gray-600">申請日: 2024-07-15</p>
+                    <div class="my-1.5 text-sm">
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">開く</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">修正</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">削除</button>
+                    </div>
+                </div>
+            </div><!-- 2 -->
+
+            <div class="bg-white rounded-lg shadow p-4 flex items-center space-x-4 mb-4">
+                <div>
+                    <h3 class="font-semibold">新入社員用ノートPC購入</h3>
+                    <p class="text-gray-600">状態: <span class="text-yellow-500">●</span>申請中</p>
+                    <p class="text-gray-600">申請者: テスト太郎</p>
+                    <p class="text-gray-600">申請日: 2024-07-26</p>
+                    <div class="my-1.5 text-sm">
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">開く</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">修正</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">削除</button>
+                    </div>
+                </div>
+            </div><!-- 3 -->
+
+        </div>
+    </div>
+</body>
+</html>
