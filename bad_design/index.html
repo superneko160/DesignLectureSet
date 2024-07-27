@@ -9,15 +9,21 @@
 <body class="bg-gray-100">
     <nav class="bg-white shadow-md p-4">
         <ul class="flex space-x-2 text-white justify-end">
-            <h1 class="text-gray-800 text-lg font-semibold mr-auto">稟議書管理アプリ</h1>
+            <h1 class="text-gray-800 text-lg font-semibold mr-auto">稟議書作成・申請</h1>
             <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">並び替え</a></li>
             <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">ダウンロード</a></li>
             <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">検索</a></li>
             <li><a href="#" class="hover:bg-blue-700 bg-blue-600 rounded-md px-4 py-2">新規作成</a></li>
         </ul>
-        <div class="flex items-center space-x-2 mt-0.5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="ユーザーアイコン" class="w-6 h-6 rounded-full bg-blue-100">
-            <span class="text-sm text-gray-600">テスト太郎</span>
+    </nav>
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto">
+            <ul class="flex space-x-4 py-2">
+                <li><a href="#" class="font-semibold text-gray-500 hover:bg-gray-200 hover:text-gray-800 rounded-md p-1.5 hover:underline">ホーム</a></li>
+                <li><a href="#" class="font-semibold text-gray-800 hover:bg-gray-200 rounded-md p-1.5 underline">作成・申請</a></li>
+                <li><a href="#" class="font-semibold text-gray-500 hover:bg-gray-200 hover:text-gray-800 rounded-md p-1.5 hover:underline">承認</a></li>
+                <li><a href="#" class="font-semibold text-gray-500 hover:bg-gray-200 hover:text-gray-800 rounded-md p-1.5 hover:underline">設定</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -42,7 +48,7 @@
                 <div>
                     <h3 class="font-semibold">テスト株式会社との新規取引開始について</h3>
                     <p class="text-gray-600">状態: <span class="text-yellow-500">●</span>申請中</p>
-                    <p class="text-gray-600">申請者: テスト花子</p>
+                    <p class="text-gray-600">申請者: テスト太郎</p>
                     <p class="text-gray-600">申請日: 2024-07-15</p>
                     <div class="my-1.5 text-sm">
                         <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">開く</button>
@@ -65,6 +71,20 @@
                     </div>
                 </div>
             </div><!-- 3 -->
+
+            <div class="bg-white rounded-lg shadow p-4 flex items-center space-x-4 mb-4">
+                <div>
+                    <h3 class="font-semibold">仙台支店への旅費交通費</h3>
+                    <p class="text-gray-600">状態: <span class="text-gray-400">●</span>下書き</p>
+                    <p class="text-gray-600">申請者: テスト太郎</p>
+                    <p class="text-gray-600">申請日: 未申請</p>
+                    <div class="my-1.5 text-sm">
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">開く</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">修正</button>
+                        <button class="text-white bg-gray-400 rounded-md px-4 py-1.5">削除</button>
+                    </div>
+                </div>
+            </div><!-- 4 -->
 
         </div>
     </div>
